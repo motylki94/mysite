@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% import "bootstrap/wtf.html" as wtf %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>email</title>
+      <!--    Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--    CSS Stylesheet-->
+    <link rel='stylesheet' href="{{url_for('static', filename='css/styles_email.css')}}">
+    <!--    Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{url_for('home')}}">
+      Home
+    </a>
+  </div>
+</nav>
+
+
+<div class="container-fluid form-container">
+    <form class="form" action="{{url_for('contact')}}" method='POST' novalidate>
+    {{ form.csrf_token }}
+        <div class="errors">{{ wtf.form_errors(form, hiddens="only") }}</div>
+        {{wtf.form_field(form.user_name)}}<br>
+        {{wtf.form_field(form.user_lastname)}}<br>
+        {{wtf.form_field(form.user_email)}}<br>
+        {{wtf.form_field(form.user_message)}}<br>
+        <br>
+        <input class="btn btn-outline-light" value="Send" onclick="this.form.submit()" />
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* KOMENTARZE */
+/* CSS rules to specify families
+font-family: 'Noto Sans', sans-serif; */
+
+body {
+/*background-color: #e3ffff;*/
+    background-image: url('../img/dymki.jpg');
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Texts */
+
+h2{
+    font-style : italic;
+    font-weight: 500;
+    font-size : 3.2rem;
+    color : #787A91;
+    padding: 40px 0 20px 0;
+}
+
+hr{
+background-color: #bec0cf;
+margin: 0 40px 50px 50px;
+}
+
+/* Classes */
+
+.card-space{
+    min-height : 60vh;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.main-card {
+    max-width : 800px;
+    background: rgb(247,245,242,0.7);
+    border-radius: 20px;
+    position: relative;
+}
+
+.opis{
+    font-style : italic;
+    font-weight: 200;
+    font-size : 1.6rem;
+    color : #787A91;
+    padding: 40px;
+    border-bottom-right-radius: 20px;
+}
+
+.odnosniki{
+    padding: 80px 120px 0 120px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+}
+
+.tooltip-text span {
+    position: relative;
+    width: 100px;
+    font-style : italic;
+    font-weight: 200;
+    font-size : 1.0rem;
+    color: white;
+    background: #787A91;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    opacity: 0;
+    transition: 0.6s opacity;
+}
+
+/* Ids */
+#moje-zdj {
+    background: rgb(184,186,203);
+    background: radial-gradient(circle, rgba(184,186,203,1) 50%, rgba(190,192,207,0) 100%);
+    width: 210px;
+    height: 240px;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+/* Hover */
+.icon:hover {
+    width: 70px;
+    height: 70px;
+    }
+
+.tooltip-text span:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #787A91;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip-text:hover > span {
+    opacity: 0.8;
+}
+
+/* Media */
+@media (max-width: 640px) {
+  h2 {
+    font-size : 2.4rem;  }
+
+  .opis{
+    font-size : 1.2rem; }
+
+   .icon{
+    width: 50px;
+    height: 50px; }
+
+  .odnosniki{
+    padding: 40px 20px 0 20px; }
+
+  .icon:hover {
+    width: 50px;
+    height: 50px;
+    }
+
+   #moje-zdj {
+    width: 180px;
+    height: 208px; }
+
+   .tooltip-text span {
+    width: 65px;
+    font-weight: 100;
+    font-size : 0.8rem;
+    padding: 4px 2px;
+    margin: 10px auto; }
+}

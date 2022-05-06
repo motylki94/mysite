@@ -1,0 +1,63 @@
+/* KOMENTARZE */
+/* CSS rules to specify families
+font-family: 'Noto Sans', sans-serif; */
+
+body {
+/*background-color: #e3ffff;*/
+    background-image: url('../img/dymki.jpg');
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Texts */
+
+a{
+    font-weight: 600;
+    color: #9495a3;
+    text-decoration: none;
+}
+
+/* Classes */
+.navbar{
+    font-style: italic;
+    background: rgb(247,245,242);
+    background: linear-gradient(90deg, rgba(247,245,242,1) 0%, rgba(0,0,0,0) 50%);
+}
+
+.form-container{
+    margin: 100px auto;
+    padding: 0 40px;
+    max-width: 800px; }
+
+.form{
+    font-style : italic;
+    font-size : 1.2rem;
+    font-weight: 400;
+    color: white; }
+
+.form-control{
+    font-style: normal;
+    font-size : 1.0rem;
+    font-weight: 300;
+    color: #585a69; }
+
+p.help-block{
+    font-style : italic;
+    font-size : 1.0rem;
+    font-weight: 400;
+    color: #ff004b;
+    background: rgb(254,112,154);
+    background: linear-gradient(90deg, rgba(254,112,154,1) 0%, rgba(0,0,0,0) 50%);
+    padding: 5px 10px;
+    border-radius: 5px; }
+
+/* Ids */
+
+
+/* Hover */
+a:hover{
+    color: #585a69;
+}
+
+
+
+/* Media */

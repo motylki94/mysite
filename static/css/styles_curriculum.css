@@ -1,0 +1,68 @@
+/* KOMENTARZE */
+/* CSS rules to specify families
+font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+/*background-color: #e3ffff;*/
+    background-image: url('../img/dymki.jpg');
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* TEXTS */
+
+a{
+    font-weight: 600;
+    font-style: italic;
+    color: #9495a3;
+    text-decoration: none; }
+
+h2{
+    font-style : italic;
+    font-weight: 500;
+    font-size : 3.2rem;
+    color : white;
+}
+
+h3{
+    font-style : italic;
+    font-weight: 600;
+    font-size : 1.6rem;
+    color : #9495a3;
+    background: rgb(254,112,154);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(143,143,143,0) 25%, rgba(255,255,255,1) 50%, rgba(82,82,82,0) 75%, rgba(0,0,0,0) 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* CLASSES */
+
+.navbar{
+    background: rgb(247,245,242);
+    background: linear-gradient(90deg, rgba(247,245,242,1) 0%, rgba(0,0,0,0) 50%);
+}
+
+.curriculum{
+    margin: 100px auto;
+}
+
+.column-cv{
+    margin-bottom: 100px;
+}
+
+.cv {
+    height: 240px;
+    width: 240px;
+}
+
+/* IDs */
+
+
+/* HOVER */
+a:hover{
+    color: #585a69;
+}
+
+.cv:hover {
+    height: 250px;
+    width: 250px;
+}
